@@ -1,0 +1,95 @@
+/*NAVIGATION*/
+
+
+.navbar {
+
+  background-color: #222222 !important;
+  text-transform: uppercase;
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-weight: 700;
+  box-shadow: 1px 1px 4px 2px #00000054;
+  border:none;
+}
+
+.navbar a {
+
+  color: #fff !important;
+  opacity: 0.7;
+}
+
+
+.navbar a:hover {
+
+  opacity: 1;
+  background-color: #111111 !important;
+}
+
+
+html {
+  font-size: 10px;
+
+}
+body,html {
+  background: url("../images/jayConcert.jpg") bottom center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid gray;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
+#next {
+  font-size:80px;
+  color:white;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  margin-top: 470px;
+  cursor: pointer;
+  margin-right: 60px;
+}
+
+#next:hover {
+  color: white;
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}

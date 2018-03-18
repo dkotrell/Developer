@@ -1,0 +1,114 @@
+html {
+
+  background-size:cover;
+  font-family: 'helvetica neue';
+  text-align: center;
+  font-size: 10px;
+}
+
+
+/*NAVIGATION*/
+
+
+.navbar {
+
+  background-color: #222222 !important;
+  text-transform: uppercase;
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-weight: 700;
+  box-shadow: 1px 1px 4px 2px #00000054;
+  border:none;
+}
+
+.navbar a {
+
+  color: #fff !important;
+  opacity: 0.7;
+}
+
+
+.navbar a:hover {
+
+  opacity: 1;
+  background-color: #111111 !important;
+}
+
+
+body {
+  background:#018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
+  margin: 0;
+  /* font-size: 2rem; */
+  display:flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border:20px solid white;
+  border-radius:50%;
+  margin:50px auto;
+  position: relative;
+  padding:2rem;
+  box-shadow:
+    0 0 0 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+}
+
+.hand {
+  width:50%;
+  height:6px;
+  background:black;
+  position: absolute;
+  top:50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+#previous {
+  font-size:80px;
+  color:white;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  margin-top: 470px;
+  cursor: pointer;
+  margin-left: 60px;
+}
+
+#previous:hover {
+  color: white;
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+
+#next {
+  font-size:80px;
+  color:white;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  margin-top: 470px;
+  cursor: pointer;
+  margin-right: 60px;
+}
+
+#next:hover {
+  color: white;
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}

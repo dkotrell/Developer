@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>#FutureSoftwareDeveloper</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style_backup.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <script src="./js/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div id="info-modal" class="hidden">
+  <div id="experience-position">Position</div>
+
+    <table>
+
+      <tr>
+        <th class="experience-job-title">Job Title</th>
+        <td id="experience-job-title"></td>
+      </tr>
+      <tr>
+        <th class="experience-company">Company</th>
+        <td id="experience-company"></td>
+      </tr>
+      <tr>
+        <th class="experience-location">Location</th>
+        <td id="experience-location"></td>
+      </tr>
+      <tr>
+        <th class="experience-dates">Dates</th>
+        <td id="experience-dates"></td>
+      </tr>
+      <tr>
+        <div>
+          <th class="experience-description">Description</th>
+          <td id="experience-description"></td>
+        </div>
+      </tr>
+
+    </table>
+  </div>
+  <div id="fader" class="hidden">
+    <!-- <div class="close-button"></div> -->
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+  </div>
+  <!-- Content below  -->
+
+  <!-- NAVIGATION -->
+
+
+  <div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a href="#header" class="navbar-brand">Home</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#aboutMe">About Me</a></li>
+          <li><a href="#footer">contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Navigation -->
+
+  <!-- Header -->
+
+  <div id="header" class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 wow bounceInLeft">
+          <h1>#Developer</h1>
+          </div>
+          <div class="col-lg-6 col-md-6 wow bounceInRight">
+            <p>"The only person you are destined to become is the person you decide to be." - Ralph Waldo Emerson</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- End Header -->
+
+    <!-- Services -->
+
+    <div id="portfolio" class="portfolio">
+      <div class="container">
+        <h2 class="wow fadeInUp">Portfolio</h2>
+        <p class="wow fadeInUp" data-wow-delay="0.4s">Here are some projects that I created using HTML, CSS, JavaScript and Bootstrap.</p>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.8s">
+            <a href="testDrumKit.html"><i class="fa fa-music" aria-hidden="true"></i></a>
+            <h4>Drum Kit</h4>
+            <p><em>JavaScript Drum Kit</em>, where you hit the corresponding key on your keyboard and it plays the sound associated with that key while flashing some animination.</p>
+          </div>
+          <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.4s">
+            <a href="testClock.html"><i class="fa fa-clock-o" aria-hidden="true"></i></a>
+            <h4>Clock</h4>
+            <p><em>CSS + JS Clock</em>, takes in the current time from JavaScript and updates the hands based on the current hour, minute and seconds.</p>
+          </div>
+          <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
+            <a href="textFLEX.HTML"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+            <h4>Flex Panel</h4>
+            <p><em>Flex Panel Image Gallery</em>, mostly uses CSS for flex box, transitions and events that are submitted.</p>
+          </div>
+          <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
+            <a href="testPopulation.html"><i class="fa fa-globe" aria-hidden="true"></i></a>
+            <h4>Population</h4>
+            <p><em>Ajax Type Ahead</em>, where everything you type shows a list of cities and states with their populations in it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Services=Portfolio -->
+
+    <!-- Pricing=Experience -->
+    <div id="experience" class="experience">
+      <div class="container">
+        <div class="row">
+          <h2 class="wow fadeInUp">Experience</h2>
+          <p class="wow fadeInUp" data-wow-delay="0.4s"> - 13 years of IT experience in the areas of desktop support, help desk, and network administration<br> - Extensive hands-on troubleshooting in desktop OS/hardware/applications and network communications
+<br> - Strong interpersonal and communication skills supporting a diverse end user population</p>
+          <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
+    <div class="card-container">
+    <div class="card">
+    <div class="side">
+    <h4>Fidelity Investments</h4>
+    <h1>End User Support Technician</h1>
+    <b>Durham, North Carolina</b>
+    <p>7/2015 - Present</p>
+    <img src="./images/Fidelity-Logo.png" alt="">
+    </div>
+
+    <div class="side back">
+      <ul>
+    <li>Supports the facilities in the RTP area, covering 6 buildings and over 3700 end users.</li>
+    <li>Responsible for the resolution of problems regarding regional desktop environment which includes PC hardware and software, desk phones, network support (switches, wireless), Video  Conferencing, and printers.</li>
+    <li>Customer support at the Guru Bar, something similar to Apple Genius Bars.</li>
+  </ul>
+</div>
+    </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
+<div class="card-container">
+<div class="card">
+<div class="side"><h4>Duke University Finance Services</h4>
+<h1>IT Specialist</h1>
+<b>Durham, North Carolina</b>
+<p>7/2013 - 7/2015</p>
+<img src="./images/dookLogo.png" alt="">
+</div>
+<div class="side back"><ul>
+  <li>Provided first and second level troubleshooting of Windows 7 and Outlook on Dell laptops and HP desktops </li>
+  <li>Installed, configured, and maintained hardware and software for desktop and laptop computers</li>
+  <li>Trained new users in basic login and access instructions and more advanced applications</li>
+</ul></div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
+<div class="card-container">
+<div class="card">
+<div class="side"><h4>IBM</h4>
+<h1>Desktop Support Technician</h1>
+<b>Research Triangle Park, North Carolina</b>
+<p>10/2007 – 7/2013</p>
+<img src="./images/IBM-logo.png" alt="">
+</div>
+<div class="side back"><ul>
+  <li>Provided Tier 1 deskside and remote support of Windows XP and Lotus Notes 8.5 on Lenovo laptops and desktops</li>
+<li>Provided timely support to over 300 end users located throughout the US</li>
+<li>Imaged, configured, and deployed Windows XP and Office 2007 systems.
+  Reimaging and configuration of existing hardware. Software upgrades</li></div>
+</ul></div>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
+<div class="card-container">
+<div class="card">
+<div class="side"><h4>Wal-mart</h4>
+<h1>Customer Service Manager</h1>
+<b> Raleigh, North Carolina</b>
+<p>9/1998 – 3/2013</p>
+<img src="./images/Walmart_logo.png" alt="">
+</div>
+<div class="side back"><ul><li>Provided customers and other associates with
+  outstanding service through friendly, quick, efficient, accurate, and safe assistance</li>
+<li>Supervised as many as 30 hourly associates within assigned areas</li>
+<li>Performed the responsibilities of other positions as
+  needed, such as cashier, courtesy desk representative, layaway associate</li></div>
+</ul></div>
+</div>
+</div>
+
+  </div>
+  </div>
+</div>
+
+    <!-- End Pricing=Experience -->
+
+    <!-- Team -->
+
+
+    <div id="aboutMe" class="aboutMe">
+      <div class="container">
+        <div class="row">
+          <h2 class="wow fadeInUp">About Me</h2>
+          <p class="wow fadeInUp" data-wow-delay="0.4s">A few words to describe myself.</p>
+          <div class="wow fadeInLeft" data-wow-delay="1s">
+            <img src="images/facebookPic.jpg" class="img-circle" alt="">
+            <h4>David Small</h4>
+            <!-- <b>Developer</b> -->
+            <ul>
+              <li>Learner |</li>
+              <li>Photographer |</li>
+              <li>Runner |</li>
+              <li>Traveler |</li>
+              <li>Coder |</li>
+              <li>Sports Fanatic |</li>
+              <li>Music Junkie</li>
+            </ul>
+            <a href="https://www.facebook.com/profile.php?id=11212304"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/david-small-a9764b30/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+<!-- End Team -->
+
+<!-- Footer -->
+
+<div id="footer" class="footer">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-4">
+      <h4>Contact Me</h4>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i> dkotrell@yahoo.com</p>
+      <p><i class="fa fa-phone" aria-hidden="true"></i> +1 919 931 2030</p>
+      <p><i class="fa fa-home" aria-hidden="true"></i> Raleigh, North Carolina</p>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- Usually scripts are kept in separate javascript files, but for this one, we're just going to keep it in the main page.-->
+<script>
+
+  /* CHECK THIS OUT! */
+  /* Whatever is passed in here as a parameter will be set as the text for an object with the ID of info-modal.
+     If you pass in any value INTO the .text() function (i.e., something.text("My text")) it will SET the text for that element.
+     If you just use .text() without passing in any parameters, it will RETURN to you the current text of that element.
+     This text() function is part of the jQuery library, and more about it can be found here: http://api.jquery.com/text/ */
+  function setInfoText(cardContent){
+    $('#info-modal').text(cardContent);
+  }
+
+  /* CHECK THIS OUT! */
+  /* Whatever is passed in here as a parameter will be set as the HTML for an object with the ID of info-modal.
+     If you pass in any value INTO the .html() function (i.e., something.html("<a>My New Link</a>")) it will SET the html for that element.
+     Unlike text, this will pass you the entire html structure for the requested element(s), including <div>, <a>, <i>, <li>, <ul> tags and more,
+     INCLUDING the text.  So basically everything within that element.
+
+     If you just use .html() without passing in any parameters, it will RETURN to you the current html inside of that element.
+     This html() function is part of the jQuery library, and more about it can be found here: http://api.jquery.com/html/ */
+  function setHTML(htmlValue){
+    $('#info-modal').html(htmlValue);
+  }
+
+  /* The jQuery syntax for activating code whenever the page is finished loading.
+     Read the top answer (the one with a score of 154 and a checkmark underneath here: https://stackoverflow.com/questions/7642442/what-does-function-do .*/
+  $(function(){
+
+    /* CHECK THIS OUT! */
+    /* Check out this page to learn more about jQuery selectors: https://www.w3schools.com/jquery/jquery_ref_selectors.asp
+       You can use that knowledge to find out exactly how to target the .side.back li element that will have all the info you need.*/
+
+
+    /* We're applying a jQuery on Click listener to every element that has the class "card".  When it's clicked, we remove the
+       class "hidden" from any element with the ID info-modal and the ID of fader.*/
+    $('.card').on('click', function(){
+      $('#info-modal, #fader').removeClass('hidden');
+
+      //var totalHTML = $(this).find('.side h1').html() + $(this).find('.side h4').html()  + $(this).find('.side p').html()  + $(this).find('.side back ul').html() ;
+      /*
+      var totalHTML = $(this).find('.side h1').html();
+      console.log("Total HTML is =");
+      console.log(totalHTML);
+      */
+      //setHTML( $(this).find('.side.back ul').html());
+
+      $('#experience-company').text(
+        $(this).find('h4').text()
+      );
+      //console.log('')
+      $('#experience-job-title').text($(this).find(' h1').text());
+      $('#experience-dates').text($(this).find(' p').text());
+      $('#experience-location').text($(this).find(' b').text());
+      $('#experience-description').html($(this).find('.side.back').html());
+
+    });
+
+
+    /* CHECK THIS OUT! */
+    /* We are going to attach a Key UP Listener to the entire document.  Whenever any key with the ASCII code 27 (Escape) is detected,
+    we are going to add the class "hidden" to any element with the ID info-modal and the ID of fader.
+
+    Check This http://www.asciitable.com/
+    */
+    $(document).on("keyup", function(e){
+      if (e.keyCode == 27) {
+        $('#info-modal, #fader').addClass('hidden');
+      }
+    });
+
+    /* Making sure the close button will close our "info-modal" and "fader", just like the ESCAPE Key */
+    $('.close-button, #fader').on("click", function(e){
+      $('#info-modal, #fader').addClass('hidden');
+    });
+
+    /* BONUS!  In a lot of programming, the main goal is to REDUCE the re-use of the same sort of functions.  In this case, as you can see, on line 175
+    and line 180, we do the same exact operation.  This highlights the benefit of a function; you can create a function that you call later that has this
+    one operation, and you can reference it within both of these listeners for these different objects.  The benefit is that, in case you wanted to change the
+    name of, for example, info-modal to something like popup-modal in your entire page, as of right now, you would have to make that change on both
+    line 175 and line 180.  But if you made a function that performed the action of adding the class "hidden" for you, then you could just modify the ONE line inside of your function.  While that doesn't seem like a big difference, imagine if you had 700 buttons on your page that all did the same thing?  You would
+    need to make that change for each of those 700 buttons, and that's really inefficient, instead of making that change on one line inside a function that all of these different elements reference.
+
+
+    So your challenge, is to create a function (at the same level as setHTML and setInfoText, so right after setHTML) that will perform the addClass('hidden')
+    operation to our #info-modal, #fader.  Once that's done, make sure that the listeners for the document and the "close-button" reference that function.
+
+    */
+
+  });
+</script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

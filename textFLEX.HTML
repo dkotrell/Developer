@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Bootstrap 101 Template</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC" type="text/css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/testFLEX.css">
+</head>
+<body>
+
+  <div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a href="index_backup.html" class="navbar-brand">Home</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index_backup.html#portfolio">Portfolio</a></li>
+          <li><a href="index_backup.html#experience">Experience</a></li>
+          <li><a href="index_backup.html#aboutMe">About Me</a></li>
+          <li><a href="index_backup.html#footer">contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panels">
+    <div class="panel panel1">
+      <p>Hey</p>
+      <p>Let's</p>
+      <p>Dance</p>
+    </div>
+    <div class="panel panel2">
+      <p>Give</p>
+      <p>Take</p>
+      <p>Receive</p>
+    </div>
+    <div class="panel panel3">
+      <p>Experience</p>
+      <p>It</p>
+      <p>Today</p>
+    </div>
+    <div class="panel panel4">
+      <p>Give</p>
+      <p>All</p>
+      <p>You can</p>
+    </div>
+    <div class="panel panel5">
+      <p>Life</p>
+      <p>In</p>
+      <p>Motion</p>
+    </div>
+  </div>
+
+  <a href="testClock.html"><i class="fas fa-chevron-left" id="previous"></i></a>
+  <a href="testPopulation.html"><i class="fas fa-chevron-right" id="next"></i></a>
+
+  <script>
+  const panels = document.querySelectorAll('.panel');
+
+  function toggleOpen() {
+    this.classList.toggle('open');
+  }
+
+  function toggleActive(e) {
+    console.log(e.propertyName);
+    if(e.propertyName.includes('flex')) {
+      this.classList.toggle('open-active');
+    }
+  }
+
+  panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+  panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
+</script>
+
+  </body>
+  </html>
